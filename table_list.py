@@ -46,15 +46,15 @@ def process_csv(csv_filepath):
     with open(csv_filepath, 'r') as csvfile:
         reader = csv.reader(csvfile)
         for row in reader:
-            table_name = row[0]  # Assuming the table name is in the first column
+            table_name = row[0]
             include = should_include_table(table_name)
             results.append({"table_name": table_name, "include": include})
     return results
 
 
 if __name__ == "__main__":
-    csv_file = "salesforce_sandbox_tables.csv"  # Replace with the actual path to your CSV file
-    output_json_file = "table_analysis_results.json"  # Name of the output JSON file
+    csv_file = "salesforce_sandbox_tables.csv"
+    output_json_file = "table_analysis_results.json"
     analysis_results = process_csv(csv_file)
 
     with open(output_json_file, 'w') as jsonfile:
