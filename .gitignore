@@ -1,0 +1,4 @@
+.env
+.venv/
+table_analysis_results.json
+salesforce_sandbox_tables.csv
