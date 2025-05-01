@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-LITELLM_API_BASE = "https://api.vending.chatbotttt.com"
+LITELLM_API_BASE = os.getenv("PROXY_URL")
 VIRTUAL_TOKEN = os.getenv("VIRTUAL_TOKEN")
 
 
