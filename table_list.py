@@ -29,6 +29,8 @@ def should_include_table(table_name):
     - Employees External: clients of the firm (travel nurses, etc.) looking for placements
     - Customer: Institutions with placements (jobs) for external employees
     - Placements: Jobs for external employees listed by customers
+    - Payroll
+    - Time Tracking
 
     Respond with "yes" if the table likely pertains to one of these entities, or "no" if it does not. If you are unsure, err on the side of caution and respond with "yes".
     """
