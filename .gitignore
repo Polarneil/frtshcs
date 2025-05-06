@@ -5,3 +5,4 @@ salesforce_sandbox_tables.csv
 source.csv
 target.csv
 mapping_results.md
+netsuite.csv
